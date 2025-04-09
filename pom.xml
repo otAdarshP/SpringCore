@@ -29,15 +29,6 @@
             <version>7.0.0-M3</version>
         </dependency>
 
-        <!-- beans.xml -->
-        <beans xmlns="http://www.springframework.org/schema/beans"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-            <bean id="firstBean" class="org.MyBean.FirstBean"/>
-        </beans>
-
     </dependencies>
 
 

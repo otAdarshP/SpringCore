@@ -1,0 +1,36 @@
+"Inversion of control (IOC)" is a design principle where the control of object creation and
+lifecycle management is transferred from Application code to the external container or framework.
+
+"Dependency Injection (DI)" is a design principle where the dependencies of the program are
+provided externally rather than being created within the class itself.
+DI is used to achieve Loose Coupling between classes.
+
+- Construction injection: Dependencies are provided to the classes using constructors.
+    Constructors are provided as arguments. This ensures that dependencies are available when the object is created.
+
+
+
+BEANS -
+objects that are managed by the frameworks are "Beans", done through configuring file in package.
+
+- Bean definition:
+It includes configuration metadata that the container needs to know to create and manager beans.
+- Bean configuration:
+Definition of beans can be provided in many ways: XML configuration files, annotations and java-based configurations.
+In configuration using XML file, the beans are defined within the <bean> tags with attributes specifying class, properties and dependencies.
+Annotations include: @Component, @Service, @Repository, etc. these are picked by Spring and managed as beans.
+
+LIFECYCLE OF BEAN:
+Instantiation -> setting up bean properties -> Initialization -> Ready for use -> Destructed.
+
+
+
+
+"Spring Containerization" is the process of keeping multiple objects within 1 container,
+which is based on the configuration file definition of the classes to be managed.
+Types:-
+1. Application Context - Mostly used.
+2. BeanFactory - Provides basic support for dependency injection, simplest.
+
+Dependencies to add in 'pom.xml' file-
+-> Maven Repository: 1. Spring-Core, 2. Spring-Context
