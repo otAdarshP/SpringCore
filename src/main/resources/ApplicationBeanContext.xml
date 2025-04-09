@@ -6,7 +6,7 @@
 
     <!-- bean definitions here -->
     <bean id="FirstBean" class="org.MyBean.FirstBean">
-        <property name="message" value="I am the first bean"/>
+        <property name="beanTesting" value="I am the first bean"/>
     </bean>
 
 </beans>

@@ -1,19 +1,19 @@
 package org.MyBean;
 
 public class FirstBean{
-    private String message;
+    private String beanTesting;
 
-    public void setMessage(String message){
-        this.message = message;
+    public void setbeanTesting(String beanTesting){
+        this.beanTesting = beanTesting;
     }
-    public void showMessage (String message){
-        System.out.println ("Message: " + message);
+    public void showbeanTesting (String beanTesting){
+        System.out.println ("Message to be shown as output: " + beanTesting);
     }
 
     @Override
     public String toString (){
         return "FirstBean{" +
-                "message=' " + message + '\'' +
+                "message to be shown as output=' " + beanTesting + '\'' +
                 '}';
     }
 
