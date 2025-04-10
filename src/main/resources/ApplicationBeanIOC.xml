@@ -5,13 +5,27 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="carSpecification" class="car.usage.injections.constructor.Specifications">
-        <property name="make" value="Volvo"/>
-        <property name="model" value="XC600"/>
+
+    <bean id="APIProvider" class="DataProvider.IoC.APIDataProvider">
     </bean>
 
-    <bean id="myCar" class="car.usage.injections.constructor.Car">
-        <constructor-arg ref="carSpecification"/>
+    <bean id="WebProvider" class="DataProvider.IoC.WebdataProvider">
     </bean>
+
+    <bean id="NewProvider" class="DataProvider.IoC.NewDBProvider">
+    </bean>
+
+    <bean id="UserManagerWithAPIProvider" class="DataProvider.IoC.UserManager">
+        <constructor-arg ref="APIProvider"/>
+    </bean>
+
+    <bean id="UserManagerWithWebProvider" class="DataProvider.IoC.UserManager">
+        <constructor-arg ref="WebProvider"/>
+    </bean>
+
+    <bean id="UserManagerWithNewProvider" class="DataProvider.IoC.UserManager">
+        <constructor-arg ref="NewProvider"/>
+    </bean>
+
 
 </beans>

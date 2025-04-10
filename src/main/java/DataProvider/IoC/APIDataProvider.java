@@ -1,13 +1,10 @@
 package DataProvider.IoC;
 
 public class APIDataProvider implements UserDataProvider{
-    private String aPIDataProvider;
 
-    public String getAPIDataProvider (){
-        return aPIDataProivder;
-    }
-    public void setAPIDataProvider(String APIDataProvider){
-        this.aPIDataProvider = aPIDataProvider;
+    @Override
+    public String getUserDetails(){
+        return "Fetching data from APIs";
     }
 
 

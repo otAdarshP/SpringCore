@@ -1,12 +1,8 @@
 package DataProvider.IoC;
 
-public class NewDBProvider {
-    private String newDBProvider;
-
-    public String getNewDBProvider (){
-        return newDBProvider;
-    }
-    public void setNewDBProvider (String newDBProvider){
-        this.newDBProvider = newDBProvider;
+public class NewDBProvider implements UserDataProvider {
+    @Override
+    public String getUserDetails(){
+        return "Fetching details from the new Database provider.";
     }
 }
