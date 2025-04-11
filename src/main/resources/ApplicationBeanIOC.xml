@@ -15,10 +15,11 @@
     <bean id="NewProvider" class="DataProvider.IoC.NewDBProvider">
     </bean>
 
+<!--    passing in the constructor reference of the 3 constructors and their implementing class - UserManager. -->
     <bean id="UserManagerWithAPIProvider" class="DataProvider.IoC.UserManager">
         <constructor-arg ref="APIProvider"/>
     </bean>
-
+<!--what this means is  - this bean needs this dependency.-->
     <bean id="UserManagerWithWebProvider" class="DataProvider.IoC.UserManager">
         <constructor-arg ref="WebProvider"/>
     </bean>

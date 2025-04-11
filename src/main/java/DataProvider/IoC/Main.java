@@ -11,7 +11,7 @@ public class Main {
         System.out.println(APImanager.getUserDetails());
 
         ApplicationContext web = new ClassPathXmlApplicationContext("ApplicationBeanIOC.xml");
-        UserManager Webmanager = (UserManager) web.getBean("UserManagerWithWebProvider");
+        UserManager Webmanager = (UserManager) web.getBean("UserManagerWithWebProvider"); // UserManager implementing the call for WebdataProvider through the beans.
         System.out.println(Webmanager.getUserDetails());
 
         ApplicationContext newDB = new ClassPathXmlApplicationContext("ApplicationBeanIOC.xml");

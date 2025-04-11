@@ -24,8 +24,6 @@ LIFECYCLE OF BEAN:
 Instantiation -> setting up bean properties -> Initialization -> Ready for use -> Destructed.
 
 
-
-
 "Spring Containerization" is the process of keeping multiple objects within 1 container,
 which is based on the configuration file definition of the classes to be managed.
 Types:-
@@ -34,3 +32,11 @@ Types:-
 
 Dependencies to add in 'pom.xml' file-
 -> Maven Repository: 1. Spring-Core, 2. Spring-Context
+
+
+"Autowiring" is to automatically resolve and inject dependencies between beans without requiring any explicit explanation in XML configuration.
+For "Autowiring" two classes are required where one is dependent on the other.
+Autowiring can be done in 3 ways:
+- TYPE (the object type, ie. Specifications of a car)
+- NAME (bean id)
+- CONSTRUCTOR
