@@ -12,9 +12,10 @@
         <property name="returnDate" value="18"/>
         <property name="reason" value="Mahabharat"/>
     </bean>
-
+<!--GatePass bean has dependency on studentGatePass-->
     <bean id="StudentGatePass" class="com.student.details.GatePass">
         <constructor-arg ref="studentGatePass"/>
     </bean>
+
 
 </beans>
