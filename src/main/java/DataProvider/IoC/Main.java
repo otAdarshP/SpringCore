@@ -18,6 +18,7 @@ public class Main {
         UserManager DBmanager = (UserManager) newDB.getBean("UserManagerWithNewProvider");
         System.out.println(DBmanager.getUserDetails());
 
+
     }
 
 }
