@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="studentInfo" class="use.autowire.byname.StudentInfo"> <!--the "ClassName" refers to the "StudntInfo"-->
+        <property name="name" value="Sanjaya"/>
+        <property name="about" value="I am a student from India."/>
+    </bean>
+    <!--GatePass bean has dependency on studentGatePass-->
+    <bean id="newClassName" class="use.autowire.byname.ClassName" autowire="byName">
+
+    </bean>
+
+
+</beans>

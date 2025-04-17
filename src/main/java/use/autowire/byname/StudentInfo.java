@@ -19,7 +19,7 @@ public class StudentInfo {
     }
 
     @Override
-    public String toString (){
+    public String toString(){
         return "StudentInfo{" +
                 "name='" + name + '\'' +
                 "about='" + about + '\'' +
