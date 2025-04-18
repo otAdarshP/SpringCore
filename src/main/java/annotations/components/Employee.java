@@ -1,17 +1,22 @@
 package annotations.components;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component("myEmployee") // if want to leave the () blank, in main, define the Employee as employee otherwise, we need to specify the exact name which we have used in main, at the @Components.
+@Component("myEmployee") // if you want to leave the () blank, in main, define the Employee as employee otherwise, we need to specify the exact name which we have used in main, at the @Components.
 public class Employee {
-    private int salary;
+
+    @Value("#{25,000}")
+    private double salary;
+    @Value("Sanjaya")
     private String firstName;
+    @Value("Kumara")
     private String secondName;
 
     public void setSalary (int salary){
         this.salary = salary;
     }
-    public int getSalary(){
+    public double getSalary(){
         return salary;
     }
 
@@ -31,9 +36,9 @@ public class Employee {
 
     public String toString(){
             return "Employee{" +
-                    "salary'" + salary + '\'' +
-                    "firstName='" + firstName + '\'' +
-                    "secondName='" + secondName + '\'' +
+                    "salary = '" + salary + '\'' +
+                    "firstName = '" + firstName + '\'' +
+                    "secondName = '" + secondName + '\'' +
                     "}";
     };
 }
