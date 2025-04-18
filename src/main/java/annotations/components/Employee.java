@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component("myEmployee") // if you want to leave the () blank, in main, define the Employee as employee otherwise, we need to specify the exact name which we have used in main, at the @Components.
 public class Employee {
 
-    @Value("#{25,000}")
+    @Value("#{25000}")
     private double salary;
     @Value("Sanjaya")
     private String firstName;
