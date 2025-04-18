@@ -45,7 +45,7 @@ Autowiring can be done in 3 ways:
 @Override - above the method way of telling something to the Java compiler.
 @Component - marks java class as bean / or a manage component.
 @Autowired - Spring will autowire dependency and the type of dependency on its declaration in xml.
-@Qualifier - when we have multiple matching types, qualifier helps with 'which bean should be matched where.'
+@Qualifier - when we have multiple matching types, qualifier helps with 'which bean should be matched where while calling autowired annotation.'
 @Value - Used to inject property values in our beans.
 @Repository - Used to define the data repository (specialized version of components annotation).
 @Service - indicates that this particular class is providing business services.
