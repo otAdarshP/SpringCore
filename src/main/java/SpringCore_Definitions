@@ -40,3 +40,33 @@ Autowiring can be done in 3 ways:
 - TYPE (the object type, ie. Specifications of a car)
 - NAME (bean id)
 - CONSTRUCTOR
+
+"Annotations" - these are the ways of adding metadata to the spring code.
+@Override - above the method way of telling something to the Java compiler.
+@Component - marks java class as bean / or a manage component.
+@Autowired - Spring will autowire dependency and the type of dependency on its declaration in xml.
+@Qualifier - when we have multiple matching types, qualifier helps with 'which bean should be matched where.'
+@Value - Used to inject property values in our beans.
+@Repository - Used to define the data repository (specialized version of components annotation).
+@Service - indicates that this particular class is providing business services.
+@Controller - Used to create web controllers, they handle http request.
+@RequestMapping
+@SpringBootApplication
+
+------
+
+Components & componentScan :
+Component refers to a Java class which is managed by the Spring IoC container (manages the spring beans). These are the building blocks.
+It is in a way a bean only - it is just designed to be auto-detected and configured from class path scanning. "We don't have to manually define this in the xml file as we had to, with the beans."
+Defining components:
+- using XML =>  <bean id = "myComponent" class = "com.example.components"/>
+
+- using Annotations =>
+import org.springframework.stereotype.Component;
+
+@Component // this marks the class as Spring annotation
+public class Component{
+// implementation of class
+}
+
+:: Component scanning is a feature that automatically detects and registers beans from predefined package paths.
