@@ -70,3 +70,25 @@ public class Component{
 }
 
 :: Component scanning is a feature that automatically detects and registers beans from predefined package paths.
+
+
+Autowired + Component - finds us the components which are autowired and their relation (or one's dependency on other).
+
+
+
+COMPONENTS OF SPRING-BOOT
+
+- Spring boot starters
+- Auto configuration
+- Spring boot actuators
+- Embedded Servers
+- Spring boot DevTools
+
+
+Layers of Spring boot's tiers:
+-> Presentation Layer - controller classes exist here (they accept the request from users, validates the inputs, and passes it to the service layer.)
+-> Service Layer - holds the business logic. It does evaluation, decision making, processing of data is done here. Acts as the communicator between Presentation and Data access layer.
+-> Data access layer - all the repository classes lie here (retrieve, save, etc.)
+
+
+BROWSER = CONTROLLER = SERVICE = REPOSITORY = DATABASE
