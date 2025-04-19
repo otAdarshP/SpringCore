@@ -92,3 +92,30 @@ Layers of Spring boot's tiers:
 
 
 BROWSER = CONTROLLER = SERVICE = REPOSITORY = DATABASE
+
+
+
+DEPENDENCIES IN SPRING BOOT
+- These are the external libraries which a program would need to run Springboot applications.
+Maven - It is a buld system which is used to manage dependencies.
+
+
+@RestController - mandatory if we are to create a rest API. It is a combination of Controller and Response Body, at class level it makes it a bean and help executing the controller function.
+(Bean is an object that is managed by the Spring.)
+
+@SpringbootAutoConfiguration - works on connecting with the local host and others on its own and works accordingly, as required.
+dispatcherServelet - Routes incoming requests to the appropriate controller methods.
+- application.properties is used for configuration the customization of properties in Spring boot which we have got from xml properties. Specification is in fomr of "Key-value" pairs.
+
+-- properties for the "application.properties" in a spring boot package.
+spring.application.name=firstWork
+server.port = 9090
+
+#these below properties enable us to configure a data source connection. But these can be overwritten by command line arguments.
+
+spring.datasource.url = jdbc:mysql://localhost/test
+spring.datasource.username = root
+spring.datasource.password = secret
+
+# update is used to automatically update the details of the database into this application using the below command.
+spring.jpa.hibernate.ddl-auto = update
