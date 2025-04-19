@@ -119,3 +119,15 @@ spring.datasource.password = secret
 
 # update is used to automatically update the details of the database into this application using the below command.
 spring.jpa.hibernate.ddl-auto = update
+
+--
+Passing dynamic path variable into a URL - basically, the result changes as per the input that is there in the url of the website.
+@GetMapping ("/hello/{ValueHolder}")
+and then in the class declaring - we add the following:
+"public Responses helloParam (@PathVariable String ValueHolder)"
+
+Also, in @PathVariable, we may have two fixed paths and in between them, we can have a variable path.
+eg:
+@GetMapping ("/hello/{VariableHolder}/show")
+
+There has to be a thoroughly thought through process about the end points of the API, the calls. And they have to be discussed and planned beforehand for better working between the front and the backend.
