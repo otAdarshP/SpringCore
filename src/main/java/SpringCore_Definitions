@@ -131,3 +131,5 @@ eg:
 @GetMapping ("/hello/{VariableHolder}/show")
 
 There has to be a thoroughly thought through process about the end points of the API, the calls. And they have to be discussed and planned beforehand for better working between the front and the backend.
+
+Model represents the category.
