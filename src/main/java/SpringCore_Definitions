@@ -133,3 +133,22 @@ eg:
 There has to be a thoroughly thought through process about the end points of the API, the calls. And they have to be discussed and planned beforehand for better working between the front and the backend.
 
 Model represents the category.
+
+
+Different generation types in @GenerationType in JPA in Spring boot:
+- Auto
+- Identity
+- Sequence
+- Table
+- None
+
+
+LOMBOK :
+It reduces the amount of repetitive code that you have to write. It is a Java library.
+@Getter / @Setter
+@NoArgsConstructor
+@Data
+@Value
+@NonNull
+@Builder
+@Cleanup
